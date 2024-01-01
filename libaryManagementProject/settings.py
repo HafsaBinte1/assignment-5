@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+CSRF_TRUSTED_ORIGINS = ['https://management-v1x5.onrender.com','https://*.127.0.0.1']
 ALLOWED_HOSTS = ['*']
 
 # Application definition
